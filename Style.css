@@ -1,0 +1,307 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Existem alguns comentários nesse código explicando algumas propriedades. Alguns desses comentários são referentes a algumas propriedades "novas" e outras para me lembrar futuramente como algo foi feito */
+
+* {
+  margin: 0px;
+  padding: 0px; 
+}
+
+body {
+  background-color: #2759E0;
+}
+
+header {
+  background-color: #E05C3D;
+  min-height: 130px;
+  text-align: center;
+  border-style: solid;
+  box-shadow: #000000 4px 1px 3px 2px;
+}
+
+header > h1 {
+  text-align: center;
+  margin-top: 0px;
+}
+
+main > article{
+  margin: 2% 10% 0% 10%;
+  min-width: 150px ;
+  background-color: rgb(12, 3, 50);
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-shadow: #000000 4px 3px 3px 2px;
+}
+
+main > article > div.boxartigos > div.conteudoboxartigos > h2 > a{
+  text-decoration: underline;
+  font-weight: 100;
+  color: #0A2F94;
+}
+
+main > article > div.boxartigos > div.conteudoboxartigos > h2 > a:hover{
+  font-weight: 100;
+  background-color: #0A2F94;
+  color: #E05C3D;
+}
+
+main > article > p > a{
+  color: #E05C3D;
+  text-decoration: dotted;
+  font-weight: 500;
+}
+
+main > article > p > a:hover{
+  text-decoration: underline;
+  background-color: #0A2F94;
+}
+
+aside > p{
+  text-align: right;
+  font-weight: 100;
+  font-size: 15px;
+  margin-left: 23px;
+}
+
+nav{
+  color: white;
+  font-size: 15px;
+  text-align: left;
+  background-size: cover;
+  padding-top: 12px;
+  font-family:'Montserrat', sans-serif;
+}
+
+nav > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+nav > ul > li {
+  display: inline-block;
+  font-size: 20px;
+  padding-bottom: 10px;
+  min-width: 50px;
+}
+
+nav > ul > li > a{
+  text-decoration: none;
+  padding: 15px;
+  padding-bottom: 10px;
+  color: #0A2F94;
+}
+
+nav > ul > li > a:hover {
+  color: #E05C3D;
+  text-decoration: underline;
+  background-color:#0A2F94;
+}
+
+footer {
+  background-color: #0A2F94;
+  padding: 5px 2px;
+}
+
+footer > p{
+text-align: justify;
+font-weight: 100;
+font-size: 15px;
+text-align: center;
+}
+
+footer > p > a:hover{
+  background-color: #2759E0;
+  text-decoration: dotted;
+  font-weight: 500;
+}
+
+h1 {
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 75px;
+  text-align: center;   
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+p{
+  margin: 17px;
+  color: white;
+  text-align: justify;
+  font-weight: 100;
+  font-size: 20px;
+  font-family:'Montserrat', sans-serif;
+  font-weight: 200; 
+}
+
+blockquote{
+  margin: 20px;
+  color: white;
+  font-weight: 100;
+  font-size: 20px;
+  font-family:'Montserrat', sans-serif;
+  font-weight: 200; 
+}
+
+.titulo {
+  color: #E05C3D;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 47px;
+  text-align: center; 
+  margin-right: auto; 
+  margin-left: auto;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.subtitulo{
+  color: chocolate;
+  font-size: 30px;
+  font-style: oblique;
+  background-color: #0A2F94;
+  border-radius: 50px;
+  /* o Width: fit-content foi utilizado para que o background color se ajustasse ao tamanho do subtitulo */
+  width: fit-content; 
+}
+
+.boxartigos {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  /* Flex-Wrap foi utilizado para deixar os boxes dos artigos responsivos. Ela permite com que os elementos filhos sejam quebrados em linhas diferentes */
+  flex-wrap: wrap;
+}
+
+.conteudoboxartigos {
+  border: 1px;
+  padding: 3px;
+  background-color: #E05C3D;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 2px 2px 2px 2px  #0A2F94;
+  width: 100%;
+  text-align: center;
+  border: 2px;
+  border-radius: 5px;
+  margin: 5px;
+  /*A propriedade flex: 1 foi utilizada com objetivo de distribuir o espaço igualmente entre conteúdo dessa classe.Isso permite que a forma do espaço seja ajustada automaticamente */
+  flex: 1;
+}
+
+.imagemcentralizada {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 35%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.imagemcentralizadanobox {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 200px;
+  max-width: 250px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex: 1;
+}
+
+.boxdestaque{
+  display: flex;
+  position: relative;
+  padding-right: 5px;
+  background-color: #E05C3D;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  text-align: justify;
+}
+
+.boxdestaque > p{
+  padding-top: auto;
+  padding-bottom: auto;
+  word-wrap: normal;
+}
+
+.boxdestaque > img{
+  width: 150px; 
+  height: auto; 
+  margin-right: 10px;
+}
+
+.linknobox {
+  color: #E05C3D;
+  background-color: #0A2F94;
+  border-radius: 50px;
+  width: fit-content; 
+}
+
+div.videocentralizado {
+  margin: 0px -20px 30px -20px;
+  padding: 20px;
+  position: relative;
+  padding-bottom: 50%;
+}
+
+div.videocentralizado > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+.videocentralizado {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  min-width: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: absolute;
+}
+
+.indice {
+  color: white;
+  font-size: 20px;
+  padding-bottom: 20px;
+  padding-left: 37px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.listadentrodotexto {
+  color: white;
+  font-family:'Montserrat', sans-serif;
+  margin: 2% 10% 0% 9%;
+  font-size: 20px;
+}
+
+.linksquemsoueu{
+  color: white;
+  text-align: justify;
+  font-weight: 100;
+  font-size: 20px;
+  font-family:'Montserrat', sans-serif;
+  font-weight: 200; 
+}
+
+.linksquemsoueu > a:hover{
+  color: #E05C3D;
+  text-decoration: underline;
+  background-color:#0A2F94;
+}
+
+.audio {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
